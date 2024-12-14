@@ -437,6 +437,11 @@ footer {
   margin: 0;
 }
 
+#nav-sp,
+#menu-sp {
+     display: none;
+}
+
 @media screen and (max-width: 767px) {
   /* PC用ナビゲーション非表示 */
   #nav-pc {
@@ -451,6 +456,8 @@ footer {
     padding: 0;
     border: none;
   }
+
+  
 
   /* スマホ用ナビゲーションの表示切替*/
   /* 初期状態、レイアウトと非表示設定 */
@@ -499,4 +506,79 @@ footer {
     background-repeat: no-repeat;
     background-position: right top;
   }
+
+  #sns {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
   }
+
+  #sns > a {
+    margin-right: 30px;
+  }
+
+/* スマホ用メインビジュアル */
+#main-visual {
+  position: relative;
+  height: 470px;
+}
+
+#main-visual > div {
+  text-align: center;
+  height: 280px;
+}
+
+#main-visual h1 {
+  font-size: 28px;
+  margin-top: 90px;
+}
+
+#main-visual > div > p {
+  margin: 0;
+  font-size: 15px;
+}
+
+#main-visual > img {
+  width: 100%;
+  border-radius: 476px;
+  top: auto;
+  bottom: 0;
+}
+
+  /* ここからメイン画面の編集 */ 
+  /* mission.html用スタイル */
+  #mission-main {
+    height: 256px;
+    margin-top: 4%;
+    position: relative;
+  }  
+
+  .mission-main-inner {
+    height: 80%;
+    background-size: cover;
+  }
+
+  #misson-title {
+    width: 136px;
+    height: 256px;
+    position: absolute;
+    top: -10%;
+  }
+
+  #mission-title h1{
+    position: absolute;
+    left: 20px;
+    font-size: 40px;
+  }
+
+  #mission-title h1 span {
+    font-size: 18px;
+  }
+
+  #misssion-title > p {
+    top: 180px;
+    left: 20px;
+    font-size: 13px;
+  }
+
+}
