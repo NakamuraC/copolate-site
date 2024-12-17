@@ -337,5 +337,34 @@ text-align: left;
   font-size: 13px;
 }
 
+.mission-h2 {
+  font-size: 38px;
+  margin: 0px;
+}
 
+.mission-h2::after {
+  content: none;
+}
+
+#mission-s2dgs > img {
+  width: 100%;
+}
+
+#mission-five-goals{
+  flex-direction: column;
+}
+
+.five-goals-image,.five-goals-read{
+  width: 100%;
+  padding: 0;
+}
+
+.five-goals-read > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.fivegoals-image-right, .fivegoals-image-left{
+  align-self: center;
+}
 }
