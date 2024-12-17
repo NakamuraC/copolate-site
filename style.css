@@ -442,343 +442,102 @@ footer {
      display: none;
 }
 
-@media screen and (max-width: 767px) {
-  /* PC用ナビゲーション非表示 */
-  #nav-pc {
-    display: none;
-  }
+/* mission.html用スタイル */
+  /* ミッションのメインビジュアル */
+.mission-main-inner {
+  background-image: url("images/mission/mission-main.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
 
-  /* ハンバーガーメニュー */
-  #menu-sp {
-    display: block;
-    background-color: transparent;
-    float: right;
-    padding: 0;
-    border: none;
-  }
-
-  
-
-  /* スマホ用ナビゲーションの表示切替*/
-  /* 初期状態、レイアウトと非表示設定 */
-  #nav-sp {
-    background-color: #2710d5;
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    display: none;
-    z-index: 100;
-  }
-
-  #close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background-color: transparent;
-    border: none;
-  }
-  #nav-sp nav ul{
-    padding-left: 0;
-  }
-  #nav-sp nav li {
-    list-style: none;  
-  }
-  #logo-sp {
-    margin: 80px 0 30px 20px;
-  }
-
-  #nav-sp nav a {
-    display: block;
-    color: #fff;
-  }
-
-  #nav-sp nav a:hover {
-    text-decoration: underline;
-  }
-  #nav-sp .menu {
-    text-decoration: none;
-    margin: 0 20px;
-    height: 44px;
-    font-size: 16px;
-    background-image: url("images/arrow.png");
-    background-repeat: no-repeat;
-    background-position: right top;
-  }
-
-  #sns {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-  }
-
-  #sns > a {
-    margin-right: 30px;
-  }
-
-/* スマホ用メインビジュアル */
-#main-visual {
+#mission-title {
+  background-color: #2710d5;
+  width: 368px;
+  color: #ffffff;
+  height: 496px;
+  border-radius: 0 248px 248px 0;
   position: relative;
-  height: 470px;
 }
 
-#main-visual > div {
-  text-align: center;
-  height: 280px;
-}
-
-#main-visual h1 {
-  font-size: 28px;
-  margin-top: 90px;
-}
-
-#main-visual > div > p {
-  margin: 0;
-  font-size: 15px;
-}
-
-#main-visual > img {
-  width: 100%;
-  border-radius: 476px 0 0 0;
-  top: auto;
-  bottom: 0;
-}
-
-  /* ここからメイン画面の編集 */ 
-  /* mission.html用スタイル */
-h2 {
-  margin: 15px 0px;
-}
-
-h3 {
-  font-size: 24px;
-  margin-top: 10px;
-}
-
-#mission{
-  margin: 20px 0;
-  padding: 0 20px;
-}
-
-#mission-flex {
-  flex-direction: column;
-}
-
-#mission-flex > div {
-  width: 100%;
-  margin: 0;
-}
-
-/* ここからプロダクト */
-#product {
-  margin: 0;
-  padding: 10px 20px 0 20px;
-}
-
-#product .product-flex {
-  flex-direction: column;
-  margin-top: 0;
-}
-
-#product-left ,#product-right {
-  width: 100%;
-  margin: 0;
-}
-
-/*  画像＋説明の枠 */
-#product-left > div,
-#product-right > div {
-  height: auto;
-  margin: 0;
-}
-
-/* 説明文の枠 */
-.product-explain {
-  position: relative;
-  margin: 0;
-}
-
-.product-explain > h3 {
-  margin: 10px 0 10px 0;
-  font-size: 24px;
-}
-
-/* もっと見るボタン */
- #product-more {
-   text-align: left;
- }
-
-  /* ABOUT US */
-  #aboutus {
-    margin: 80px 20px 80px 20px;
-  }
-
-  #aboutus > div {
-    flex-direction: column;
- }
-
-  .culture-table th {
-    font-size: 16px;
-  }
-
-  .culture-table {
-    margin-right: 0;
-    padding-right: 20px;
-    order: 2;
-  }
-
-  .culture-img {
-    width: 100%;
-    order: 1;
-  }
-
-  .culture-img2 {
-    margin-top: 0;
-  }
-
-  .culture-num {
-    padding: 0;
-  }
-
-  .culture-description {
-    margin: 0;
-  }
-
-  /* ここからビジョン */
-
-#vision {
-  margin: 80px 20px;
-}
-
-.vision-box > img {
+#mission-title h1 {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 100px;
+  font-size: 80px;
+  line-height: 1;
+}
+#mission-title h1 span {
+  font-size: 26px;
 }
 
-.vision-box > div > h4 {
-  margin-top: 60px;
+#mission-title > p {
+  position: absolute;
+  top: 350px;
+  left: 100px;
+  font-size: 16px;
 }
 
-
-/* ここからカンパニー */
-
-#company {
-  margin: 0 20px;
-}
-
-#company > h3 {
-  margin-bottom: 20px;
-}
-
-.tableheader {
-  width: 50px;
-}
-
-.cell {
+ /* S2DGs */
+ #mission-s2dgs {
   padding: 20px;
-}
+ }
 
-#company > iframe {
-  height: 240px;
-}
+ .mission-h2 {
+  color: #2710d5;
+  font-size: 40px;
+ }
 
+ .mission-h2::after {
+  content: none;
+ }
 
-/* お問い合わせ */
-#contact {
-  margin:80px 20px; 
-}
+ /* ここからミッションの話 */
 
-#contact > h3 {
-  margin-bottom: 20px;
-}
+ #mission-five-goals {
+  padding: 20px;
+  display: flex;
+ }
 
-#contact > form > div {
-  flex-direction: column;
-  margin-bottom: 20px;
-}
+ .five-goals-image {
+  width: 30%;
+  padding: 20px;
+ }
 
-.contact-heading {
-  align-self: auto;
-  margin-bottom: 20px;
-}
-
-.contact-textbox {
-  min-width: 300px;
+ .five-goals-image img {
   width: 100%;
+ }
+
+ .five-goals-read {
+  width: 70%;
+  padding: 20px;
+ }
+
+.five-goals-read > div {
+  margin-bottom: 40px;
 }
 
-.contact-textarea {
-  height: 150px;
-  width: 100%;
+.fivegoals-image-right {
+  float: right;
+  margin: 20px;
 }
 
-.radiobutton {
-  margin-bottom: 20px;
+.fivegoals-image-left {
+  float: left;
+  margin: 20px;
 }
 
-
-/* ここからフッター */
-footer {
-padding: 30px 20px 50px 20px;
-text-align: left;
+.fivegoals-number {
+  color: #2710d5;
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
 }
 
-#footer-link > a {
-  margin: 0 20px 30px 0;
-  display: block;
-  background-image: url("images/arrow.png");
-  background-repeat: no-repeat;
-  background-position: right top;
+.fivegoals-h3 {
+  font-size: 28px;
+  margin: 0;
 }
 
-#footer-link > a:hover {
-  text-decoration: underline;
-}
-
-#sns-footer {
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-#copyright {
-  font-size: 12px;
-  margin: 30px;
-}
-
-/* #mission-main {
-    height: 256px;
-    margin-top: 4%;
-    position: relative;
-  }  
-
-  .mission-main-inner {
-    height: 80%;
-    background-size: cover;
-  }
-
-  #misson-title {
-    width: 136px;
-    height: 256px;
-    position: absolute;
-    top: -10%;
-  }
-
-  #mission-title h1{
-    position: absolute;
-    left: 20px;
-    font-size: 40px;
-  }
-
-  #mission-title h1 span {
-    font-size: 18px;
-  }
-
-  #misssion-title > p {
-    top: 180px;
-    left: 20px;
-    font-size: 13px;
-  }
- */
+.fivegoals-p {
+  margin: 0;
 }
